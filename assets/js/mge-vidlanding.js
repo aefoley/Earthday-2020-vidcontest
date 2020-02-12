@@ -101,7 +101,7 @@ $(document).ready(function($) {
     });//end media
 
    // animate the button
-   $('#yellow-button').addClass('wiggle');
+   //$('#yellow-button').addClass('wiggle');
 
 });//end ready
 
