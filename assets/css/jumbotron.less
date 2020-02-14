@@ -115,6 +115,11 @@ ul, ol {
     line-height: 1.3em;
 }
 
+.video-button {
+  opacity:.8;
+  margin-top:17vw;
+}
+
 /* ============= header and nav */
 
  .topbar {
@@ -142,7 +147,7 @@ ul, ol {
 .hero {
     height:38%;
     height:38vw;
-    background: url('assets/img/2020/header-vidcontest-HIRES-2020.jpg') center no-repeat;
+    background: url('../img/2020/header-vidcontest-HIRES-2020.jpg') center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -157,7 +162,20 @@ ul, ol {
     }
 }
 
-/*New and improved orange bar, now blue*/
+.teacher-button {
+  margin-top:-30px;
+}
+
+.locations {
+  ul {
+    list-style-position:inside;
+  }
+  img { 
+    float:left;
+    }
+}
+
+/*New and improved orange bar, now purple*/
 .purplebar {
     background-color:@purple;
     border:none;
@@ -187,10 +205,8 @@ ul, ol {
     -webkit-animation: wiggle 0.2s 5;
 }
 
-#yellow-button {
-    //width:100px;
-    margin-top:28vw;
-    margin-left:52vw;
+.yellow-button {
+    padding-top:400px;
 }
 
 /* Sticky footer styles
@@ -364,6 +380,13 @@ hr.orange-answer-line {
 /* ==================================================================  Landscape tablets and medium desktops col-md */
 @media (min-width: 992px) and (max-width: 1199px) {
 
+  .teacher-button {
+    margin-top:5px;
+  }
+  .main-headline {
+    font-size:2.5em;
+  }
+
 }
 
 
@@ -416,10 +439,7 @@ hr.orange-answer-line {
     display:block !important;
   }
 
-  #yellow-button {
-      margin-top:20vw;
-      margin-left:68vw;
-  }
+
 }
 /* /* ================================================================== Landscape phones and portrait tablets col-xs */
 @media (max-width: 767px) {
@@ -430,14 +450,13 @@ hr.orange-answer-line {
 }
   .main-headline {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.2em;
   }
 
   .hero {
     height:32%;
     height:32vw;
-    background: url('../img/website-HIRES.jpg') right -50px center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -447,6 +466,19 @@ hr.orange-answer-line {
       left: 60%;
     }
  
+  }
+
+  .teacher-button {
+    margin-top:0;
+    width:300px;
+    display:block;
+    margin:0 auto;
+
+  }
+
+  .video-button {
+    width:76px;
+    margin-top:11vw;
   }
 
   
