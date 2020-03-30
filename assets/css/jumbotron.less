@@ -1,0 +1,482 @@
+
+/* ============================== 
+Theme: MGE Earth Day Every Day
+Description: Earth Day Every Day 
+============================  */
+
+@import "margins";
+
+
+/* ============= variables */
+@red: rgb(237, 28, 36);
+@lightblue: rgb(0, 166, 233);
+@darkerblue: rgb(0, 125, 197);
+@orange:rgb(242, 101, 34);
+@neworange:#ff9b00;
+@green:RGB(109, 176, 51); 
+@gold:RGB(235, 188, 34);
+@purple:RGB(90, 16, 122);
+@yellow:RGB(255, 252, 200);
+@darkergreen:RGB(0, 153, 62);
+@darkgray:#353535;
+
+
+/* ============= typography */
+.red {color: @red}
+.lightblue {color: @lightblue}
+.darkerblue {color: @darkerblue}
+.orange {color: @orange}
+.green {color: @green}
+.gold{color:@gold}
+.purple{color:@purple}
+.darkergreen{color:@darkergreen}
+.neworange {color:@neworange}
+.darkgray {color:@darkgray}
+
+.sans {
+   font-family:'Open Sans', sans-serif;
+}
+
+body {
+  font-size:14px;
+  .sans
+ }
+
+ p {
+  line-height:1.5em;
+ }
+
+.larger {
+  font-size:150%;
+}
+
+.smaller {
+  font-size: 80% !important;
+}
+
+.cite {
+  font-size:30%;
+}
+
+.condensed-light {
+  font-family:'Open Sans Condensed', sans-serif;
+  font-weight:300;
+  font-size: 130%;
+
+}
+.condensed {
+  font-family:'Open Sans Condensed', sans-serif;
+  font-weight:700;
+  font-size: large;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight:700;
+  line-height:1.5em;
+}
+
+h4{
+  &.red {color:@red;}
+  &.lightblue {color:@lightblue;}
+  &.darkerblue {color:@darkerblue;}
+  &.orange {color:@orange;}
+  &.green {color:@green;}
+}
+
+h3{
+  &.red {color:@red;}
+  &.lightblue {color:@lightblue;}
+  &.darkerblue {color:@darkerblue;}
+  &.orange {color:@orange;}
+  &.green {color:@green;}
+}
+
+a {
+  font-weight:bold;
+  text-decoration:underline;
+}
+
+.text-justify {text-align:justify}
+
+a.orange {
+  color:@orange;
+  &:hover {
+    color:darken(@orange, 20%);
+  }
+}
+
+ul, ol {
+    -webkit-padding-start:20px;
+}
+
+.main-headline {
+    color: #fff;
+    font-size: 3em;
+    line-height: 1.3em;
+}
+
+.video-button {
+  opacity:.8;
+  margin-top:17vw;
+}
+
+/* ============= header and nav */
+
+ .topbar {
+  background-color:@purple;
+  img {
+    margin-top:-40%; 
+    margin-bottom:-30%
+  }
+ }
+
+ .title-bar {
+  background-color:@purple;
+ }
+
+.title-image {/* oh, the humanity*/
+    width:80%; 
+    float:left;
+}
+
+.title-logo {
+  width:15%; 
+  float:right;
+}
+
+.hero {
+    height:38%;
+    height:38vw;
+    background: url('../img/2020/header-vidcontest-HIRES-2020.jpg') center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: inset -5px 50px 50px -57px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset -5px 50px 50px -57px rgba(0,0,0,0.5);
+    box-shadow: inset -5px 50px 50px -57px rgba(0,0,0,0.5);
+    img.site-title {
+      position:absolute;
+      width:15%;
+      left:85%;
+    }
+}
+
+.teacher-button {
+  margin-top:-30px;
+}
+
+.locations {
+  ul {
+    list-style-position:inside;
+  }
+  img { 
+    float:left;
+    }
+}
+
+/*New and improved orange bar, now purple*/
+.purplebar {
+    background-color:@purple;
+    border:none;
+    border-radius:0;
+    -webkit-box-shadow: 0px 6px 10px -5px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 6px 10px -5px rgba(0,0,0,0.46);
+    box-shadow: 0px 6px 10px -5px rgba(0,0,0,0.46);
+    margin-top:-3px;
+
+}
+
+/*wiggles video button*/
+
+@-webkit-keyframes wiggle {
+    0% {
+        -webkit-transform:rotate(4deg);
+    }
+    50% {
+        -webkit-transform:rotate(-4deg);
+    }
+    100% {
+        -webkit-transform:rotate(4deg);
+    }
+}
+ 
+.wiggle{
+    -webkit-animation: wiggle 0.2s 5;
+}
+
+.yellow-button {
+    padding-top:400px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -100px;
+ }
+
+.page-wrap:after {
+  content: "";
+  display: block;
+
+}
+.footer, .page-wrap:after {
+  height: 100px;
+}
+.footer {
+    background-color: #006F56;
+ 
+}
+
+.right-footer {
+    float:right;
+}
+
+
+
+.img-circle, div{
+  &.border-orange {
+    border:2px solid orange
+  }
+  &.border-green {
+    border: 2px solid green
+  }
+  &.border-blue {
+    border: 2px solid @darkerblue;
+  }
+}
+
+div.orange-rule{
+  height:10px; width:100%; 
+  background: url('../img/borderdotorange.png') repeat-x; 
+  margin:10px auto;
+}
+
+/* ============= All sections */
+
+.scroll-to-top {
+  background-color:#fff;
+  height:40px;
+  width:40px;
+  border-radius:50px;
+  text-align:center;
+  position:fixed;
+  bottom: 30px;
+  right:30px;
+  z-index: 200;
+}
+
+span.up::after {
+  content: url('../img/round-up.png');
+}
+
+.border-bar {
+  margin:30px auto;
+  height:50px;
+  &.orange {
+    background-color:@orange;
+    margin-bottom:0;
+  }
+   &.darkerblue {
+    background-color:@darkerblue;
+    margin-bottom:0;
+  }
+  &.green {
+    background-color:@green;
+    margin-top:0;
+  }
+}
+
+button {
+   font-family:'Open Sans', sans-serif;
+   font-weight:700;
+}
+
+h3.popover-title{
+  margin:0;
+}
+
+hr.green-answer-line {
+  border-top:1px solid @green;
+  margin-top:40px;
+  margin-bottom:10px;
+}
+
+hr.orange-answer-line {
+  border-top:1px solid @orange;
+  margin-top:40px;
+  margin-bottom:10px;
+}
+
+.popover {
+  font-size:12px;
+}
+
+.img-center {
+  display:block;
+  margin:0 auto;
+}
+
+.float-left {
+  float:left;
+}
+.float-right {
+  float:right;
+}
+.clear-left {
+  clear:left;
+}
+.clear-right {
+  clear:right;
+}
+.clear-both {
+  clear:both;
+}
+
+
+.rulesbox {
+  background-color:#e9ffe5;
+  border-radius:20px; 
+  padding:20px;
+ 
+  img {
+   border:2px solid darken(@darkerblue, 20%); 
+   width:220px;
+  }
+}
+
+
+/* bootstrap 3 helpers */
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
+
+
+/* /* ================================================================== Large devices (large desktops, 1200px and up)  col-lg */
+@media (min-width: 1200px) {}
+
+/* ==================================================================  Landscape tablets and medium desktops col-md */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .teacher-button {
+    margin-top:5px;
+  }
+  .main-headline {
+    font-size:2.5em;
+  }
+
+}
+
+
+/* /* ================================================================== Portrait tablets and small desktops col-sm */
+@media (min-width: 768px) and (max-width: 991px) {
+  .title-logo {
+    width:20%; 
+    float:right;
+  }
+
+ .main-headline {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+/*
+  collapse nav early*/
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+  margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+  }
+
+
+}
+/* /* ================================================================== Landscape phones and portrait tablets col-xs */
+@media (max-width: 767px) {
+
+.title-logo {
+  width:20%; 
+  float:right;
+}
+  .main-headline {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
+
+  .hero {
+    height:32%;
+    height:32vw;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    img.site-title {
+      width:30%;
+      left: 60%;
+    }
+ 
+  }
+
+  .teacher-button {
+    margin-top:0;
+    width:300px;
+    display:block;
+    margin:0 auto;
+
+  }
+
+  .video-button {
+    width:76px;
+    margin-top:11vw;
+  }
+
+  
+}
+
+/* /* ================================================================== Portrait phones and smaller */
+@media (max-width: 480px) { 
+
+
+  }
